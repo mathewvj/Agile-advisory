@@ -1,23 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menuToggle");
-    const closeMenu = document.getElementById("closeMenu");
-    const navbarNav = document.getElementById("navbarNav");
-    const navLinks = document.querySelectorAll(".nav-close");
+  const menuToggle = document.getElementById("menuToggle");
+  const closeMenu = document.getElementById("closeMenu");
+  const navbarNav = document.getElementById("navbarNav");
+  const navLinks = document.querySelectorAll(".nav-close");
 
-    // Open Navbar on Click
-    menuToggle.addEventListener("click", function () {
-      navbarNav.classList.toggle("show");
-    });
-
-    // Close Navbar on Close Button Click
-    closeMenu.addEventListener("click", function () {
-      navbarNav.classList.remove("show");
-    });
-
-    // Close Navbar on Clicking a Nav Link
-    navLinks.forEach((link) => {
-      link.addEventListener("click", function () {
-        navbarNav.classList.remove("show");
-      });
-    });
+  // Toggle menu when clicking the hamburger button
+  menuToggle.addEventListener("click", function () {
+      navbarNav.classList.add("show");
   });
+
+  // Close menu when clicking the close button
+  closeMenu.addEventListener("click", function () {
+      navbarNav.classList.remove("show");
+  });
+
+  // Close menu when clicking on any nav link
+  navLinks.forEach(link => {
+      link.addEventListener("click", function () {
+          navbarNav.classList.remove("show");
+      });
+  });
+
+  // Close menu when clicking outside of it
+  document.addEventListener("click", function (event) {
+      if (!navbarNav.contains(event.target) && !menuToggle.contains(event.target)) {
+          navbarNav.classList.remove("show");
+      }
+  });
+});

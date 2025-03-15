@@ -1,28 +1,35 @@
-
-
 .navbar {
     position: absolute;
-    z-index: 10;
+    z-index: 1000;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
 }
 
-.navbar-brand strong {
-    display: block;
-    text-align: center;
-    font-size: 2.5rem; 
-    line-height: 25px;
+/* Toggler (Hamburger Menu) */
+.custom-toggler {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.icon-close {
+    cursor: pointer;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #e05e5ec8;
+    filter: none !important; 
+    color: white !important;
 }
 
-.navbar-brand span {
-    font-size: 0.8rem; 
-    font-weight: normal;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.39);
+/* Logo */
+.logo-agile {
+    max-height: 80px;
+    width: auto;
 }
 
+/* Navbar Links */
 .nav-link {
     color: white;
     font-weight: 500;
@@ -31,77 +38,66 @@
 }
 
 .nav-link:hover {
-    color: #e05e5e;
+    color: #651406d7;
 }
 
-.custom-toggler {
-    border: none;
-    background: transparent;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.close-icon {
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    font-size: 1.5rem;
-}
-
-
-  @media (max-width: 768px) {
-
-    .navbar-brand strong {
-        font-size: 1.8rem;
-        line-height: 20px;
-        margin-top: 10px;
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    
-    .navbar-brand span {
-        font-size: 0.6rem;
-    }
-    .custom-toggler{
+
+    .custom-toggler {
         order: 1;
+        margin-right: 10px;
     }
+
     .navbar-brand {
         order: 2;
-        margin-left: 15px !important;
-        margin-right: auto !important;
+        margin-left: 0; /* Ensures logo is next to toggler */
     }
-    
-    .navbar-collapse {
-        order: 3;
+
+    .logo-agile {
+        max-height: 50px;
+        width: auto;
     }
-    
+
     .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.892);
+        background-color: rgba(0, 0, 0, 0.712);
         padding: 1rem;
-        z-index: 10;
-        
     }
-    
-    .navbar-nav {
-        margin-top: 0.5rem;
+    .navbar-collapse.show {
+        transform: translateX(0);
     }
-    
+
     .nav-item {
         margin: 0.5rem 0;
     }
+    .icon-close {
+        display: block; 
+        filter: none !important; 
+        color: white !important
+    }
 }
-
-
-  /* Hero section */
-
-  .hero-section {
-    background-image: url('../asstes/images/hero-section.jpg');
+/* Hero Section */
+.hero-section {
+    background-image: url('../asstes/images/herosection.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 120px 0;
+    padding: 400px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: relative;
-    min-height: 100vh;
 }
 
+/* Background Overlay */
 .hero-section::before {
     content: '';
     position: absolute;
@@ -109,212 +105,213 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.5) 100%);
     z-index: 1;
 }
 
+/* Hero Content */
 .hero-content {
     position: relative;
     z-index: 2;
-    color: #ffffff;
+    color: white;
     max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 35px;
+    border-radius: 20px;
 }
 
 .hero-title {
     font-weight: 700;
     margin-bottom: 20px;
-    color: #ffffff79;
+    color: #f0dbaf;
 }
 
 .hero-text {
     margin-bottom: 30px;
     font-size: 1.1rem;
-    color: #f8f9fadb;
+    color: #f8f9fa;
 }
 
-.hero-btn {
-    background-color: #0d6efd;
+/* Hero Button */
+.hero-btn  {
+    background-color: #651406d7;
     border: none;
     padding: 12px 30px;
     font-weight: 600;
     transition: all 0.3s ease;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .hero-btn:hover {
-    background-color: #0b5ed7;
+    background-color: #a93f2dd7;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive Hero Section */
 @media (max-width: 768px) {
     .hero-section {
-        padding: 60px 20px; /* Added horizontal padding */
-        background-position: center;
-        text-align: center; /* Centers all text */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .hero-content {
-        margin: 0 auto; 
-        text-align: center; 
-        padding-top: 50px;
-        width: 90%; 
+        padding: 80px 20px;
     }
 
-    .hero-section::before {
-        background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.7) 100%);
+    .hero-content {
+        max-width: 90%;
+        padding: 30px;
     }
 
     .hero-title {
         font-size: 1.5rem;
-        padding: 0 20px;
     }
 
     .hero-text {
         font-size: 0.9rem;
-        padding: 10px 20px; 
     }
 
     .hero-btn {
         font-size: 1rem;
-        margin-top: 15px; 
-        padding: 10px 20px; 
-        display: inline-block;
+        padding: 10px 20px;
     }
-   
 }
 
-
-/* about section */
+/* About Section Styles */
 .about-section {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #f9f9f9;
 }
 
 .section-title {
+    font-size: 2.5rem;
     font-weight: 700;
     color: #333;
-    margin-bottom: 10px;
-    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
 .divider {
-    height: 4px;
+    height: 3px;
     width: 60px;
-    background-color: #e05e5e;
-    margin-bottom: 40px;
+    background-color: #651406d7;
+    margin-bottom: 30px;
 }
 
-/* Improved Image Styling */
+/* Circular Image Container Styling */
 .image-container {
     position: relative;
-    display: flex;
-    justify-content: center;
     padding: 20px;
 }
 
 .circle-bg {
     position: absolute;
-    width: 320px;
-    height: 320px;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
-    background-color: rgba(224, 94, 94, 0.1);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: #f0f4ff;
+    top: 5%;
+    left: 5%;
     z-index: 1;
 }
 
 .image-wrapper {
     position: relative;
     z-index: 2;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 8px solid #fff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 8px solid #ffffff;
 }
 
 .accent-circle {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background-color: #e05e5e;
-    bottom: 12%;
-    right: 12%;
-    z-index: 1;
+    background-color: rgba(65, 84, 241, 0.1);
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
 
-/* Enhanced Content Styling */
-.about-content {
-    padding-left: 30px;
-}
-
+/* Content Styling */
 .content-title {
-    color: #333;
+    font-size: 2rem;
     font-weight: 600;
-    position: relative;
+    color: #212529;
 }
 
 .about-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #6c757d;
 }
 
-.btn-primary {
-    background-color: #e05e5e;
-    border-color: #e05e5e;
-    padding: 12px 30px;
-    font-weight: 600;
+/* Check List Styling */
+.check-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.check-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.icon-check {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #651406d7;
+    font-size: 18px;
+}
+
+/* If you don't have an icon font, you can use a background image or pseudo-element */
+.icon-check::before {
+    content: "✓";
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.about-content .btn-primary {
+    background-color: #651406d7;
+    padding: 10px 25px;
     border-radius: 50px;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-    background-color: #c04545;
-    border-color: #c04545;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(224, 94, 94, 0.3);
+.about-content .btn-primary:hover {
+    background-color: #a93f2dd7;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(96, 3, 5, 0.753);
 }
 
-@media (max-width: 992px) {
-    .about-content {
-        padding-left: 0;
-        margin-top: 30px;
-        text-align: center;
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .image-container {
+        max-width: 400px;
+        margin: 0 auto;
     }
     
-    .about-text {
-        text-align: center;
+    .content-title {
+        font-size: 1.8rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
     .about-section {
-        padding: 70px 0;
+        padding: 60px 0;
     }
-    
-    .circle-bg {
-        width: 280px;
-        height: 280px;
-    }
-    
-    .image-wrapper {
-        width: 260px;
-        height: 260px;
+    .about-content{
+        padding:0 20px ;
     }
 }
