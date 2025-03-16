@@ -1,140 +1,913 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AGILE-Advisory Services</title>
 
-        <!-- Bootstrap CSS -->
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
 
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <main>
-<!-- Navigation Bar -->
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg" id="mainNav">
-    <div class="container d-flex align-items-center justify-content-between">
-        <!-- Left side: Toggler and Logo -->
-        <div class="d-flex align-items-center">
+      <!-- Navigation Bar -->
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <!-- Left side: Toggler and Logo -->
+          <div class="d-flex align-items-center">
             <!-- Toggler Button - First -->
-            <button class="navbar-toggler custom-toggler me-2" type="button" id="menuToggle" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="bi bi-list"></i>
+            <button
+              class="navbar-toggler custom-toggler me-2"
+              type="button"
+              id="menuToggle"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <i class="bi bi-list"></i>
             </button>
 
             <!-- Brand Logo - Second (Aligned left) -->
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="./asstes/images/AgileLogo1.png" class="logo-agile" alt="Logo">
+              <img
+                src="./asstes/images/AgileLogo1.png"
+                class="logo-agile"
+                alt="Logo"
+              />
             </a>
-        </div>
+          </div>
 
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <!-- Navbar Links -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <!-- close button -->
-            <span class="icon-close d-lg-none position-absolute top-0 end-0 p-3" id="closeMenu">✖</span>
+            <span
+              class="icon-close d-lg-none position-absolute top-0 end-0 p-3"
+              id="closeMenu"
+              >✖</span
+            >
 
             <ul class="navbar-nav text-center text-lg-start">
-                <li class="nav-item">
-                    <a class="nav-link nav-close" href="#heroSection">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-close" href="#about">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-close" href="#services">Our Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-close" href="#faq">FAQs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-close" href="#contact">Contact Us</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link nav-close" href="#heroSection">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-close" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-close" href="#services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-close" href="#faq">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-close" href="#contact">Contact Us</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </div>
-</nav>
+      </nav>
 
-
-<!-- Hero Section -->
-<section class="hero-section d-flex align-items-center text-center">
-    <div class="container">
-        <div class="hero-content mx-auto">
-            <h1 class="hero-title">Expert GST, Income Tax, and Incorporation Solutions, Tailored for Your Needs</h1>
-            <p class="hero-text">From GST compliance to income tax planning and incorporating your company/ LLP, we simplify the process and maximize your benefits.</p>
-            <a href="#contact" class="btn btn-primary hero-btn">Get a Free Consultation</a>
+      <!-- Hero Section -->
+      <section class="hero-section d-flex align-items-center text-center">
+        <div class="container">
+          <div class="hero-content mx-auto">
+            <h1 class="hero-title">
+              Expert GST, Income Tax, and Incorporation Solutions, Tailored for
+              Your Needs
+            </h1>
+            <p class="hero-text">
+              From GST compliance to income tax planning and incorporating your
+              company/ LLP, we simplify the process and maximize your benefits.
+            </p>
+            <a href="#contact" class="btn btn-primary hero-btn"
+              >Get a Free Consultation</a
+            >
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<section id="about" class="about-section">
-    <div class="container">
-        <div class="row mb-5">
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="row mb-5">
             <div class="col-12 text-center">
-                <h2 class="section-title">About Us</h2>
-                <div class="divider mx-auto"></div>
+              <h2 class="section-title">About Us</h2>
+              <div class="divider mx-auto"></div>
             </div>
-        </div>
-        
-        <div class="row align-items-center">
+          </div>
+
+          <div class="row align-items-center">
             <!-- Image Column with Circular Design -->
             <div class="col-lg-5 mb-5 mb-lg-0">
-                <div class="image-container">
-                    <div class="circle-bg"></div>
-                    <div class="image-wrapper">
-                        <img src="./asstes/images/about-us.jpg" alt="Agile Advisory Services Team" class="img-fluid rounded-circle">
-                    </div>
-                    <div class="accent-circle"></div>
+              <div class="image-container">
+                <div class="circle-bg"></div>
+                <div class="image-wrapper">
+                  <img
+                    src="./asstes/images/about-us.webp"
+                    alt="Agile Advisory Services Team"
+                    class="img-fluid rounded-circle"
+                  />
                 </div>
+                <div class="accent-circle"></div>
+              </div>
             </div>
-            
+
             <!-- Content Column with Better Alignment -->
             <div class="col-lg-7">
-                <div class="about-content">
-                    <h3 class="content-title mb-4">Your Business Compliance Partner</h3>
-                    <p class="about-text">
-                        Starting and running a business can be challenging, but we make it simple. At Agile, we specialize in helping entrepreneurs, startups, and businesses navigate the complexities of business registration, tax compliance, and financial management.
-                    </p>
-                    <p class="about-text mb-4">
-                        With years of expertise in company formations, GST, Income Tax, and ROC compliance, we provide hassle-free, efficient, and transparent services to help businesses stay legally compliant and financially organized. Our mission is to empower businesses with expert guidance, ensuring they meet all regulatory requirements while focusing on growth.
-                    </p>
-                    <p class="about-text mb-4">
-                        Our mission is to empower businesses with expert guidance, ensuring they meet all regulatory requirements while focusing on growth. Whether you're launching a startup, managing tax filings, or need ongoing accounting support, we're here to handle the complexities—so you don’t have to.
+              <div class="about-content">
+                <h3 class="content-title mb-4">
+                  Your Business Compliance Partner
+                </h3>
+                <p class="about-text">
+                  Starting and running a business can be challenging, but we
+                  make it simple. At Agile, we specialize in helping
+                  entrepreneurs, startups, and businesses navigate the
+                  complexities of business registration, tax compliance, and
+                  financial management.
+                </p>
+                <p class="about-text mb-4">
+                  With years of expertise in company formations, GST, Income
+                  Tax, and ROC compliance, we provide hassle-free, efficient,
+                  and transparent services to help businesses stay legally
+                  compliant and financially organized. Our mission is to empower
+                  businesses with expert guidance, ensuring they meet all
+                  regulatory requirements while focusing on growth.
+                </p>
+                <p class="about-text mb-4">
+                  Our mission is to empower businesses with expert guidance,
+                  ensuring they meet all regulatory requirements while focusing
+                  on growth. Whether you're launching a startup, managing tax
+                  filings, or need ongoing accounting support, we're here to
+                  handle the complexities—so you don’t have to.
+                </p>
 
-                    </p>
-                    
-                    <!-- Why Choose Us Section -->
-                    <h4 class="mb-3">Why Choose Us?</h4>
-                    <ul class="check-list mb-4">
-                        <li><span class="icon-check"></span> <strong>Expert Guidance</strong> – Compliance and tax laws simplified for you.</li>
-                        <li><span class="icon-check"></span> <strong>Affordable & Transparent Pricing</strong> – No hidden charges, no surprises.</li>
-                        <li><span class="icon-check"></span> <strong>Hassle-Free Process</strong> – End-to-end assistance from registration to filing.</li>
-                        <li><span class="icon-check"></span> <strong>Dedicated Support</strong> – Personalized service tailored to your business needs.</li>
-                    </ul>
-                    
-                    <p class="about-text mb-4">
-                        Let us take care of the legal and financial side of your business while you focus on what matters most—growing your business!
-                    </p>
-                    <a href="#contact" class="btn btn-primary"><i class="bi bi-telephone"> Contact Us</i> </a>
-                </div>
+                <!-- Why Choose Us Section -->
+                <h4 class="mb-3">Why Choose Us?</h4>
+                <ul class="check-list mb-4">
+                  <li>
+                    <span class="icon-check"></span>
+                    <strong>Expert Guidance</strong> – Compliance and tax laws
+                    simplified for you.
+                  </li>
+                  <li>
+                    <span class="icon-check"></span>
+                    <strong>Affordable & Transparent Pricing</strong> – No
+                    hidden charges, no surprises.
+                  </li>
+                  <li>
+                    <span class="icon-check"></span>
+                    <strong>Hassle-Free Process</strong> – End-to-end assistance
+                    from registration to filing.
+                  </li>
+                  <li>
+                    <span class="icon-check"></span>
+                    <strong>Dedicated Support</strong> – Personalized service
+                    tailored to your business needs.
+                  </li>
+                </ul>
+
+                <p class="about-text mb-4">
+                  Let us take care of the legal and financial side of your
+                  business while you focus on what matters most—growing your
+                  business!
+                </p>
+                <a href="#contact" class="btn btn-primary"
+                  ><i class="bi bi-telephone"> Contact Us</i>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-        
+      </section>
 
+      <!-- Our services -->
 
-      </main>
+      <section id="services" class="services-section py-5">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="section-title">Our Services</h2>
+              <div class="divider mx-auto"></div>
+              <!-- <p class="section-subtitle">Comprehensive business compliance and financial management solutions</p> -->
+            </div>
+          </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="./scripts/script.js"></script>
+          <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="service-card h-100">
+                <div class="icon-box">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h5>Company Registration Services</h5>
+                <p>
+                  Start your business journey with proper legal structure. We
+                  handle incorporation documents, director appointments, and all
+                  statutory requirements.
+                </p>
+                <a href="#" class="service-link"
+                  >Learn more <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
 
-</body>
+            <!-- Service 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="service-card h-100">
+                <div class="icon-box">
+                  <i class="fas fa-receipt"></i>
+                </div>
+                <h5>GST Registration & Filing</h5>
+                <p>
+                  Seamless GST registration and timely filing services to ensure
+                  your business remains compliant with current tax regulations.
+                </p>
+                <a href="#" class="service-link"
+                  >Learn more <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="service-card h-100">
+                <div class="icon-box">
+                  <i class="fas fa-file-invoice"></i>
+                </div>
+                <h5>Income Tax Return (ITR) Filing</h5>
+                <p>
+                  Professional ITR filing services for individuals and
+                  businesses, ensuring accuracy and maximizing legitimate
+                  deductions.
+                </p>
+                <a href="#" class="service-link"
+                  >Learn more <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="service-card h-100">
+                <div class="icon-box">
+                  <i class="fas fa-calculator"></i>
+                </div>
+                <h5>Accounting & Bookkeeping</h5>
+                <p>
+                  Comprehensive bookkeeping and accounting services to maintain
+                  accurate financial records and provide insights for business
+                  decisions.
+                </p>
+                <a href="#" class="service-link"
+                  >Learn more <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="service-card h-100">
+                <div class="icon-box">
+                  <i class="fas fa-percentage"></i>
+                </div>
+                <h5>TDS Filing</h5>
+                <p>
+                  Accurate and timely Tax Deducted at Source (TDS) filing
+                  services to ensure compliance with income tax regulations.
+                </p>
+                <a href="#" class="service-link"
+                  >Learn more <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="service-card h-100">
+                <div class="icon-box">
+                  <i class="fas fa-clipboard-check"></i>
+                </div>
+                <h5>ROC Compliance & Annual Filings</h5>
+                <p>
+                  Comprehensive Registrar of Companies (ROC) compliance services
+                  including annual returns and regulatory document filings.
+                </p>
+                <a href="#" class="service-link"
+                  >Learn more <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service 7 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="service-card h-100">
+                <div class="icon-box">
+                  <i class="fas fa-store"></i>
+                </div>
+                <h5>MSME Registration</h5>
+                <p>
+                  Simplified Udyam (MSME) registration services to help small
+                  businesses access government schemes and benefits.
+                </p>
+                <a href="#" class="service-link"
+                  >Learn more <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service 8 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="service-card h-100">
+                <div class="icon-box">
+                  <i class="fas fa-id-card"></i>
+                </div>
+                <h5>TAN & PAN Application</h5>
+                <p>
+                  Hassle-free assistance with Tax Account Number (TAN) and
+                  Permanent Account Number (PAN) applications and modifications.
+                </p>
+                <a href="#" class="service-link"
+                  >Learn more <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQS -->
+
+      <section id="faq" class="faq-section py-5">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="section-title">Frequently Asked Questions</h2>
+              <div class="divider mx-auto"></div>
+              <p class="section-subtitle">
+                Find answers to common questions about our services and business
+                compliance
+              </p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="accordion" id="faqAccordion">
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading1">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse1"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      What is the best type of business structure for me?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse1"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading1"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      It depends on your business goals. A Sole Proprietorship
+                      is easy to set up, an LLP is good for small partnerships,
+                      a Private Limited Company is ideal for startups seeking
+                      investment, and a Partnership Firm is suitable for small
+                      businesses with multiple owners.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading2">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse2"
+                      aria-expanded="false"
+                      aria-controls="collapse2"
+                    >
+                      How long does it take to register a company in India?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading2"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Registration usually takes 10-15 working days, depending
+                      on document verification and government processing times.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading3">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse3"
+                      aria-expanded="false"
+                      aria-controls="collapse3"
+                    >
+                      What documents are required for company registration?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading3"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Common documents include PAN, Aadhaar, address proof of
+                      directors, office address proof, and digital signatures
+                      (DSC & DIN) for company directors.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading4">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse4"
+                      aria-expanded="false"
+                      aria-controls="collapse4"
+                    >
+                      Who needs to register for GST?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse4"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading4"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Businesses with an annual turnover of ₹40 lakh (₹20 lakh
+                      for service providers) or those involved in interstate
+                      sales, e-commerce, or export-import must register for GST.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading5">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse5"
+                      aria-expanded="false"
+                      aria-controls="collapse5"
+                    >
+                      How often do I need to file GST returns?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading5"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      GST returns can be monthly, quarterly, or annually,
+                      depending on your business type and turnover.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading6">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse6"
+                      aria-expanded="false"
+                      aria-controls="collapse6"
+                    >
+                      What happens if I don’t file GST on time?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse6"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading6"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Late filing leads to penalties of ₹50 per day for normal
+                      returns and ₹20 per day for NIL returns, plus interest on
+                      outstanding tax.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading7">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse7"
+                      aria-expanded="false"
+                      aria-controls="collapse7"
+                    >
+                      Who is required to file an Income Tax Return?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse7"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading7"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Individuals earning above ₹2.5 lakh per year, businesses,
+                      professionals, and companies must file ITR. There is not
+                      tax payment required for certain limits (currently no tax
+                      till ₹12.5 lakhs), but ITR filing is mandatory in case the
+                      earning goes above ₹2.5 lakhs.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading8">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse8"
+                      aria-expanded="false"
+                      aria-controls="collapse8"
+                    >
+                      What is the deadline for filing ITR?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse8"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading8"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      The usual deadline for individuals and businesses is 31st
+                      July, and for companies requiring audits, it is 31st
+                      October (subject to government extensions).
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading9">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse9"
+                      aria-expanded="false"
+                      aria-controls="collapse9"
+                    >
+                      What happens if I miss the ITR filing deadline?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse9"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading9"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      You may have to pay a penalty of up to ₹5,000 and could
+                      lose eligibility for tax refunds and carry-forward losses.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading10">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse10"
+                      aria-expanded="false"
+                      aria-controls="collapse10"
+                    >
+                      Why do I need accounting services?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse10"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading10"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Proper accounting helps track business finances, ensures
+                      tax compliance, and assists in making informed financial
+                      decisions.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 11 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading11">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse11"
+                      aria-expanded="false"
+                      aria-controls="collapse11"
+                    >
+                      What software do you use for bookkeeping?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse11"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading11"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      We use Tally, QuickBooks, Zoho Books, and other
+                      cloud-based accounting platforms as per client preference.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 12 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading12">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse12"
+                      aria-expanded="false"
+                      aria-controls="collapse12"
+                    >
+                      Who needs to deduct TDS?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse12"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading12"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Any business or individual making specified payments like
+                      salaries, rent, or contractor fees beyond a threshold must
+                      deduct TDS before payment.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 13 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading13">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse13"
+                      aria-expanded="false"
+                      aria-controls="collapse13"
+                    >
+                      What is the penalty for late TDS filing?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse13"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading13"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Late filing attracts penalties of ₹200 per day and can
+                      lead to disallowance of expenses in income tax.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 14 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading14">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse14"
+                      aria-expanded="false"
+                      aria-controls="collapse14"
+                    >
+                      What are the annual compliance requirements for a Private
+                      Limited Company?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse14"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading14"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Companies must file AOC-4 (Financial Statements) and MGT-7
+                      (Annual Return) with the MCA every year.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 15 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading15">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse15"
+                      aria-expanded="false"
+                      aria-controls="collapse15"
+                    >
+                      What happens if I miss ROC filing deadlines?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse15"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading15"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Late filing can lead to penalties of ₹100 per day and even
+                      company strike-off by the MCA in extreme cases.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 16 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading16">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse16"
+                      aria-expanded="false"
+                      aria-controls="collapse16"
+                    >
+                      What are the benefits of MSME registration?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse16"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading16"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      MSME-registered businesses get low-interest loans, tax
+                      benefits, government subsidies, and easier credit access.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 17 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading17">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse17"
+                      aria-expanded="false"
+                      aria-controls="collapse17"
+                    >
+                      How long does MSME registration take?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse17"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading17"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      The Udyam Registration Certificate is usually issued
+                      within 1-2 working days after application.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 18 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading18">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse18"
+                      aria-expanded="false"
+                      aria-controls="collapse18"
+                    >
+                      Who needs a TAN number?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse18"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading18"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Any business or individual required to deduct TDS must
+                      obtain a TAN (Tax Deduction and Collection Account
+                      Number).
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 19 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading19">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse19"
+                      aria-expanded="false"
+                      aria-controls="collapse19"
+                    >
+                      Can I apply for PAN and TAN online?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapse19"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="heading19"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes, we assist with seamless online applications for both
+                      PAN and TAN.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
