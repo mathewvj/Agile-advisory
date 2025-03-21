@@ -27,7 +27,7 @@
   </head>
   <body>
     <main>
-      <!-- Navigation Bar -->
+     
       <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg" id="mainNav">
         <div
@@ -49,7 +49,7 @@
             <!-- Brand Logo - Second (Aligned left) -->
             <a class="navbar-brand d-flex align-items-center" href="#">
               <img
-                src="./asstes/images/AgileLogo1.png"
+                src="./asstes/images/AgileLogo22.jpg"
                 class="logo-agile"
                 alt="Logo"
               />
@@ -957,7 +957,8 @@
                                   <div class="col-md-12">
                                       <div class="form-floating">
                                           <input type="text" class="form-control" id="fullName" placeholder=" " required>
-                                          <label for="firstName">Full Name</label>
+                                          <label for="fullName">Full Name</label>
+                                          <small id="nameError" class="text-danger error-message"></small>
                                       </div>
                                   </div>
                               
@@ -965,17 +966,25 @@
                                       <div class="form-floating">
                                           <input type="email" class="form-control" id="email" placeholder=" " required>
                                           <label for="email">Email Address</label>
+                                          <small
+                                            id="emailError"
+                                            class="text-danger error-message"
+                                          ></small>
                                       </div>
                                   </div>
                                   <div class="col-md-6">
                                       <div class="form-floating">
                                           <input type="tel" class="form-control" id="phone" placeholder=" " required>
                                           <label for="phone">Phone Number</label>
+                                          <small
+                                            id="phoneError"
+                                            class="text-danger error-message"
+                                          ></small>
                                       </div>
                                   </div>
                                   <div class="col-12">
                                       <div class="form-floating">
-                                        <select class="form-select form-control" id="subject" required>
+                                        <select class="form-select form-control" id="service" required>
                                             <option value="" selected disabled>Select a service</option>
                                             <option value="Company Registration services">Company Registration services</option>
                                             <option value="GST Registration & Filing">GST Registration & Filing </option>
@@ -993,10 +1002,14 @@
                                       <div class="form-floating">
                                           <textarea class="form-control" id="message" style="height: 150px" placeholder=" " required></textarea>
                                           <label for="message">How can we help you?</label>
+                                          <small
+                                            id="messageError"
+                                            class="text-danger error-message"
+                                          ></small>
                                       </div>
                                   </div>
                                   <div class="col-12 mt-4">
-                                      <button type="submit" class="btn btn-submit">
+                                      <button type="submit" class="btn btn-submit" id="submitButton">
                                         <i class="bi bi-send me-2"></i>Send Message
                                       </button>
                                   </div>
@@ -1010,6 +1023,13 @@
       </div>
     </section>
     </main>
+     <!-- WhatsApp Icon -->
+     <a
+     href="https://api.whatsapp.com/send?phone=+918129172677&amp;text=Hi"
+     class="whatsapp-float"
+     target="_blank"
+     ><i class="bi bi-whatsapp"></i>
+   </a>
 
     <!-- Footer -->
 <footer>
@@ -1041,10 +1061,10 @@
               <p><i class="bi bi-envelope me-2"></i> support@agileadvisory.in</p>
               
               <div class="social-icons">
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <!-- <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a> -->
+                  <a href="https://www.linkedin.com/company/agile-advisory-services-in/about/?viewAsMember=true "><i class="bi bi-linkedin"></i></a>
+                  <!-- <a href="#"><i class="bi bi-instagram"></i></a> -->
               </div>
           </div>
       </div>
@@ -1060,9 +1080,11 @@
   </div>
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
-    <script src="./scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="./scripts/form.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
   </body>
 </html>
