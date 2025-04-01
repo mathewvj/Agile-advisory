@@ -15,7 +15,7 @@ section {
 
 /* Navbar Brand Logo */
 .logo-agile {
-    height: 70px;
+    height: 90px;
     width: auto;
 }
 
@@ -76,6 +76,19 @@ section {
     .nav-item {
         margin: 10px 0;
     }
+    .logo-agile {
+        height: 90px;
+        width: auto;
+    }
+    
+}
+
+@media (max-width : 768px){
+    .logo-agile {
+        height: 70px;
+        width: auto;
+    }
+    
 }
 
 
