@@ -4,7 +4,7 @@ section {
 
 /* General Navbar Styles */
 #mainNav {
-    background-color: rgb(245, 246, 235); /* Transparent background */
+    background-color: rgb(255, 255, 255); /* Transparent background */
     padding: 0px 20px;
     position: fixed;
     width: 100%;
@@ -25,7 +25,7 @@ section {
 }
 
 .navbar-nav .nav-link {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: #651406d7; /* White text */
     transition: color 0.3s ease-in-out;
