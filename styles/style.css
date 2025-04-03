@@ -48,6 +48,10 @@ section {
     outline: none;
 }
 
+.icon-close{
+    cursor: pointer;
+}
+
 /* 🔹 Mobile View - Navbar Collapse */
 @media (max-width: 992px) {
     .navbar-collapse {
